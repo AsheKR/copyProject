@@ -1,0 +1,224 @@
+$color-right-menu-anchor: #585858;
+$color-bg-search-container: #ebe6e0;
+$color-bg-search-button: #3b8de0;
+$color-bg-search-button-hover: #2074c8;
+
+$height-search-container: 678px;
+
+$height-search-form-bg: 110px;
+$height-search-form-elements: 50px;
+
+$margin-top-search-form: ($height-search-form-bg - $height-search-form-elements) / 2;
+
+$width-search-form-input: 434px;
+$width-search-form-button: 100px;
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+.horizontal {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  > * {
+    float: left;
+  }
+}
+
+.clearfix::after {
+  content: '';
+  clear:both;
+  display: block;
+}
+
+
+header.main-header {
+
+  > nav {
+    border-bottom: 1px solid #ccc;
+    // LEFT
+    >ul.left {
+      float: left;
+      > li:first-of-type {
+        margin: {
+          left: 15px;
+          right: 15px;
+        };
+      }
+    }
+    // RIGHT
+    > .right {
+      float: right;
+
+      > ul > li > a {
+        color: $color-right-menu-anchor;
+        text-decoration: none;
+        padding: 0 10px;
+        margin: 0 7px;
+      }
+
+      > .room-list {
+        font-size: 14px;
+      }
+
+      > .auth-list {
+        font-size: 12px;
+      }
+    }
+
+    // under ALL NAV
+    ul > li > a {
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+
+      > img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+
+// search-container
+// Contain: ratio
+// Cover: fit All
+
+.search-container {
+  position: relative;
+  height: $height-search-container;
+  background-color: $color-bg-search-container;
+  background-image: url("../images/MainSearch-img-2018.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  > .input-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $height-search-form-bg;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    > form {
+      width: $width-search-form-input + $width-search-form-button;
+      margin: $margin-top-search-form  auto;
+
+      > * {
+        float: left;
+        height: $height-search-form-elements;
+        box-sizing: border-box;
+      }
+
+      > input {
+        width: $width-search-form-input;
+        padding: 0 20px;
+        border: none;
+        border-radius: 3px 0 0 3px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        line-height: $height-search-form-elements;
+      }
+
+      > button {
+        width: $width-search-form-button;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        font-size: 15px;
+        color: white;
+        background-color: $color-bg-search-button;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: $color-bg-search-button-hover;
+        }
+      }
+    }
+  }
+}
+
+section.theme-search {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 3px;
+  }
+
+  p.title-description {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    > li {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      overflow: hidden;
+
+      cursor: pointer;
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        > .bg {
+          transform: scale(1.2);
+        }
+      }
+
+      & > * {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      // bg && pet
+      & > .bg {
+        height: 100%;
+        transition-duration: 0.3s;
+        &.pet {
+          background-image: url("../images/pet.jpg");
+        }
+      }
+
+      & > .mask {
+        background-color: #2a2a2a;
+        opacity: .4;
+      }
+
+      & > .typo {
+        color: white;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        & > hr {
+          width: 46px;
+        }
+      }
+    }
+  }
+}

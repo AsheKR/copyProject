@@ -1,0 +1,137 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #373a3c;
+  padding: 0 10px;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+img {
+  min-width: 100%;
+}
+
+blockquote {
+  padding: 1em calc(2em + 25px) 1em 1em;
+  background-color: #eeeeee;
+  border: 2px dashed #ccc;
+  border-left: 5px solid #71BC6D;
+  white-space: pre-line;
+  margin: 10px 0;
+}
+
+.main_header {
+  font-size: 2.4em;
+}
+
+.editTime {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.editTime p{
+  float: right;
+}
+
+.identi {
+  border: 1px solid #ccc;
+  padding: 2px 0 2px 5px;
+  border-radius: 4px;
+}
+
+.identi ul {
+  display: inline;
+  padding: 0;
+}
+
+.identi .identi_list {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 3px;
+}
+
+.AnotherDoc {
+  margin-top: 10px;
+}
+
+.AnotherDocImg {
+  display: inline-block;
+  width: 21px;
+  min-width: 0;
+  height: 21px;
+}
+
+.AnotherDoc p {
+  display: inline;
+  margin-left: 5px;
+}
+
+.AnotherDoc > * {
+  vertical-align: middle;
+}
+
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  border: 2px solid #B38B6E;
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+}
+
+th {
+  color: white;
+  background-color: #B38B6E;
+  padding: 3px 40px;
+}
+
+table tr:first-child td {
+  padding: 10px;
+}
+
+.list {
+  margin: 50px 0 0 10px;
+  padding: 0 15px 0 0;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.list h3 {
+  padding: 0 0 0 20px;
+}
+
+.list ul {
+  padding: 0 0 0 30px;
+}
+
+.list li {
+  list-style: none;
+}
+
+.subheader {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.subheader h2{
+  display: inline-block;
+}
+
+.subheader p {
+  float: right;
+}

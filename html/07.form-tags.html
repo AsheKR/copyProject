@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Form - tags</h1>
+  <h2>Input tags</h2>
+  <form action="">
+    <div>
+      <input type="text" name="username">
+    </div>
+    <div>
+      <input type="password" name="password">
+    </div>
+    <div>
+      <input type="radio" name="radio">
+    </div>
+    <div>
+      <input type="file" name="file">
+    </div>
+
+    <div>
+      <input type="hidden" name="hidden" value="hiddenValue">
+    </div>
+    <div>
+      <textarea name="textarea" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+      <input type="button" value="Button">
+    </div>
+    <div>
+      <input type="submit" value="Sumit">
+    </div>
+    <div>
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+  <h2>Input attributes</h2>
+  <form action="">
+    <input type="text" value="disabled" disabled>
+    <input type="text" value="readonly" readonly>
+    <input type="text" required placeholder="Need to Type">
+    <input type="text" size="3">
+    <input type="text" maxlength="10">
+    <input type="checkbox" checked>
+    <input type="radio" name="agree" id="radio1" value="Check1" checked>
+    <input type="radio" name="agree" id="radio2" value="Check2">
+  </form>
+
+  <h2>Label</h2>
+  <form action="">
+    <label>ID <input type="checkbox"></label>
+  </form>
+
+<!-- Label for -->
+
+  <form action="">
+    <label for="secondCheckbox">ID</label>
+    <input type="checkbox" id="secondCheckbox">
+  </form>
+
+  <h2>Select</h2>
+  <!-- form>select[name="number" id="select-id"]>option[value=$]*4 -->
+  <form action="">
+    <select name="number" id="select-id">
+      <option value="1">First</option>
+      <option value="2">Second</option>
+      <option value="3">Third</option>
+      <option value="4">Foutrh</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>Select Multiple</h2>
+  <form action="">
+    <select name="fruit" multiple>
+      <option value="apple">apple</option>
+      <option value="banana">banana</option>
+      <option value="oragne">orange</option>
+    </select>
+  </form>
+
+  <h2>optgroup</h2>
+  <select name="" id="">
+    <optgroup label="Fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+    </optgroup>
+    <optgroup label="Colors">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </optgroup>
+  </select>
+
+  <h2>Button</h2>
+  <form action="">
+    <input type="button" value="InputButton"></input>
+    <button type="button">Button</button>
+    <input type="button" value="InputResetButton"></input>
+    <button type="reset">Reset Button</button>
+    <button type="submit">Submit Button</button>
+  </form>
+
+  <fieldset>
+    <legend>Login</legend>
+    <label for="">username: <input type="text"></label>
+    <label for="">password: <input type="password"></label>
+  </fieldset>
+</body>
+</html>

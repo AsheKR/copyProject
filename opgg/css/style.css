@@ -1,0 +1,368 @@
+body, li, ul {
+  padding: 0;
+  margin: 0;
+}
+
+li, ul {
+  list-style-type: none;
+  font-size: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.clearfix::after {
+  display: block;
+  content: '';
+  height: 0;
+  clear: both;
+}
+
+.wrap {
+  background: linear-gradient(52deg, #5383e8, #3991ef 31%, #3892f0 32%, #3594f1 36%, #00b2ff);
+  min-width: 1080px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+header {
+  background-color: #1ea1f7;
+}
+
+header li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header > .header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header > .header > ul.sites {
+  float: left;
+}
+
+header > .header > ul.sites > li.site {
+  margin-right: 20px;
+}
+
+header > .header > ul.sites > li.site.site-logo {
+  padding-right: 20px;
+  border-right: 1px solid #fff;
+  border-right-color: rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+}
+
+header > .header > ul.sites > li.site > a > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header > .header > ul.sites > li.site > a > span {
+  font-size: 12px;
+}
+
+header > .header > ul.sites > li.site > a > img {
+  margin-right: 9px;
+}
+
+header > .header > ul.sites > li.site > a > img.site-logo__lol {
+  margin-right: 12px;
+}
+
+header > .header > ul.gnb-list {
+  float: right;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__setting {
+  margin-left: 10px;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__setting > button.gnb-btn {
+  background-color: inherit;
+  border: none;
+  height: 32px;
+  cursor: pointer;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__setting > button.gnb-btn > span.gnb-btn__server {
+  padding: 2px 7px 3px;
+  margin-right: 9px;
+  background-color: #fff;
+  color: #1ea1f7;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__setting > button.gnb-btn > span.gnb-btn__lang {
+  color: #fff;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__setting > button.gnb-btn > span.gnb-btn__icon {
+  margin-left: 15px;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__login {
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__login::before {
+  display: inline-block;
+  content: '';
+  border-right: 1px solid #fff;
+  border-right-color: rgba(255, 255, 255, 0.4);
+  width: 1px;
+  height: 18px;
+  margin-right: 20px;
+  vertical-align: middle;
+  height: 32px;
+}
+
+header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__login > a {
+  display: inline-block;
+  height: 26px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 2px;
+  line-height: 26px;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  background: #1c87c3;
+  text-decoration: none;
+}
+
+.menu {
+  background: #1d2e51;
+}
+
+.menu > ul.menu-items {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.menu > ul.menu-items > li.menu__item {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+.menu > ul.menu-items > li.menu__item:first-child {
+  margin-left: 0;
+}
+
+.menu > ul.menu-items > li.menu__item > a {
+  color: #73a1cb;
+  display: block;
+  padding-bottom: 9px;
+  padding-top: 13px;
+  padding: 11px 8px 7px;
+  font-size: 15px;
+}
+
+.menu > ul.menu-items > li.menu__item.menu__item--active > a,
+.menu > ul.menu-items > li.menu__item.menu__item:hover > a {
+  border-bottom: 3px solid #fff;
+  color: white;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  min-height: 700px;
+  padding-bottom: 120px;
+}
+
+.container > .index-logo {
+  padding: 60px 0 53px;
+}
+
+.container > .index-logo > img {
+  display: block;
+  max-width: 360px;
+  max-height: 232px;
+  margin: 0 auto;
+}
+
+.container > form.summoner-search-form {
+  position: relative;
+  width: 624px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.container > form.summoner-search-form > input.summoner-search-form__text__sugest {
+  position: relative;
+  width: 100%;
+  padding: 15px 150px 18px 17px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  line-height: 17px;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.container > form.summoner-search-form > button.summoner-search-form__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.container > form.summoner-search-form > button.search-btn {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.container > form.summoner-search-form > button.search-btn > span.search-btn__server {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 1px 7px 2px 8px;
+  line-height: 13px;
+  font-size: 11px;
+  letter-spacing: -0.4px;
+  color: #fff;
+  background: #788185;
+}
+
+.community-best {
+  width: 529px;
+  min-height: 396px;
+  border: 1px;
+  margin-top: 30px;
+  background-color: #fff;
+  border: solid 1px #e9eff4;
+  float: left;
+}
+
+.community-best.community-best--right {
+  float: right;
+}
+
+.community-best > .community-best__header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.community-best > .community-best__header > a {
+  display: block;
+  padding: 17px 0 16px 20px;
+  line-height: 17px;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item {
+  border-top: 1px solid #f0f0f0;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item:first-child {
+  border-top: none;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__rank {
+  float: left;
+  line-height: 68px;
+  width: 55px;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: oblique;
+  color: #1ab80c;
+  text-align: center;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__thumbnail {
+  float: left;
+  height: 56px;
+  padding: 6px 0 0;
+  margin-right: 20px;
+  width: 100px;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__thumbnail > img {
+  max-width: 100px;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__title {
+  margin-top: 14px;
+  line-height: 17px;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__title > em {
+  color: #0475b8;
+  font-style: normal;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__sub {
+  margin-top: 6px;
+  color: #879292;
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__sub > .community-article__list__item__sub__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.community-best > .community-best__content > ul.community-article__list > li.community-article__list__item > a > .community-article__list__item__sub > .community-article__list__item__sub__item:last-child:before {
+  display: inline-block;
+  margin-left: 6px;
+  margin-right: 6px;
+  content: "";
+  border-left: 1px solid #d8d8d8;
+  height: 1px;
+  vertical-align: middle;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.down-icon {
+  width: 7px;
+  height: 4px;
+  background-position: -133px -1464px;
+  background-image: url("../images/site.png");
+}
+
+.down-icon__black {
+  background-position: -133px -2532px;
+  width: 7px;
+  height: 4px;
+  background-image: url("../images/site.png");
+}
+
+.search-icon {
+  display: inline-block;
+  background-position: -90px -797px;
+  width: 50px;
+  height: 30px;
+  background-image: url("../images/site.png");
+}

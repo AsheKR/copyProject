@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <!-- fieldset>legend{Default Data}+label[for=id]+input:text[placeholder="4 ~ 16"]+label[for=pw]+input:password[placeholder="input your pw"]+label[for=email]+input:text+label[for=sex]+select>option*2 -->
+    <fieldset>
+      <legend>Default Data</legend>
+      <label for="id"><b>ID</b></label>
+      <input type="text" name="id" id="id" placeholder="4 ~ 16"> <br>
+      <label for="pw"><b>PW</b></label>
+      <input type="password" name="pw" id="pw" placeholder="input your pw"> <br>
+      <label for="email">EMAIL</label>
+      <input type="email" name="email" id="email"> <br>
+      <label for="sex">GENDER</label>
+      <select name="sex" id="sex">
+        <option value="men">MEN</option>
+        <option value="women">WOMEN</option>
+      </select>
+    </fieldset>
+
+    <!-- fieldset>legend{choice Input}+label[for=age]{AGE}+input:text[size=4 id=age]+label[for=address]+input:text[id=address]+label[for=intself]+textarea[cols=30 rows=10 id=intself] -->
+    <fieldset>
+      <legend>choice Input</legend>
+      <label for="age">AGE</label>
+      <input type="number" name="age" id="age" size="4"> <br>
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address"> <br>
+      <label for="intself">Introduce my Self</label> <br>
+      <textarea name="intself" id="intself" cols="150" rows="10" placeholder="Introduce my self"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

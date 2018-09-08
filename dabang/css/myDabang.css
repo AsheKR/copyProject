@@ -1,0 +1,121 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+nav::after {
+  content: ' ';
+  height: 0;
+  display: block;
+  clear: both;
+}
+
+.horizontal {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.horizontal > * {
+  float: left;
+}
+
+header.main-header {
+  height: 60px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+header.main-header > nav > .right {
+  float: right;
+}
+
+
+header.main-header > nav > ul.left > li > a > img {
+  vertical-align: middle;
+}
+
+header.main-header > nav > .left > li:first-of-type {
+  margin: 0 20px;
+}
+
+header.main-header > nav ul.horizontal > li{
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+}
+
+header.main-header > nav > .right > ul > li > a{
+  color: #585858;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 7px;
+}
+
+header.main-header > nav > .right > .room-list a{
+  font-size: 14px;
+}
+
+header.main-header > nav > .right > .auth-list a  {
+  font-size: 12px;
+}
+
+
+/* Search Container */
+
+.search-container {
+  position: relative;
+  height: 678px;
+}
+
+.search-container > .mainSearch-img {
+  height: 100%;
+  background-position: 50% 0;
+  background-size: cover;
+  background-image: url('../images/MainSearch-img-2018.png');
+}
+.search-container > .mainSearch-bottom {
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  bottom:0;
+}
+
+.search-container > .mainSearch-bottom > .mainSearch-wrap {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.search-container .searchForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 574px;
+}
+
+.search-container .searchForm-input {
+  width: 434px;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  font-size: 14px;
+  line-height: 50px;
+  float:left;
+}
+
+.search-container .searchForm-btn {
+  float: left;
+  width: 100px;
+  height: 50px;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  font-size: 15px;
+  background-color: #0958a6;
+  color: #fff;
+}

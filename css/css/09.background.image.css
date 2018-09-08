@@ -1,0 +1,23 @@
+.bg {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-image: url('../images/flower.jpeg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+
+.bg1 {
+  background-attachment: local;
+}
+
+.bg2 {
+  background-attachment: scroll;
+}
+
+.bg3{
+  background-attachment: fixed;
+}

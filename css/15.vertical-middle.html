@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      border: 1px solid black;
+    }
+
+    .margin0auto {
+      width: 300px;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    .tac {
+      text-align: center;
+    }
+
+    .span2 {
+      display: inline-block;
+      height: 60px;
+      width: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- need more information Vertical Align -->
+  <!-- if you want use vertical align -->
+  <!-- 1. parent display: block (HAVE HEIGHT) -->
+  <!-- 2. give attr to all you Want vertical Align Factor(CHILD, MORE THAN TWO) -->
+  <div class="box margin0auto tac">
+    <span stlye="line-height:100px;">ABCD</span>
+    <!-- <span class="span2 box"></span> -->
+  </div>
+
+  <div class="box margin0auto" style="position: relative;">
+    <span class="box" style="white-space: pre-line; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);">ABCD
+    ASDF</span>
+  </div>
+</body>
+</html>

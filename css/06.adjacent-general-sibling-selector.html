@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  section {
+    border: 3px solid black;
+  }
+  .adjacent-sibling h2 + ul, .general h2 ~ ul{
+      background-color: LightBlue;
+      color: DarkBlue;
+    }
+  </style>
+</head>
+<body>
+  <section class="adjacent-sibling">
+    <ul>
+      <li>List - Item1</li>
+      <li>List - Item2</li>
+    </ul>
+    <h2>Adjacent</h2>
+    <ul>
+      <li>List2 - Item1</li>
+      <li>List2 - Item2</li>
+    </ul>
+    <ul>
+      <li>List3 - Items1</li>
+      <li>List3 - Items2</li>
+    </ul>
+  </section>
+
+  <section class="general">
+    <ul>
+      <li>List - Item1</li>
+      <li>List - Item2</li>
+    </ul>
+    <h2>General</h2>
+    <ul>
+      <li>List2 - Item1</li>
+      <li>List2 - Item2</li>
+    </ul>
+    <ul>
+      <li>List3 - Items1</li>
+      <li>List3 - Items2</li>
+    </ul>
+  </section>
+
+</body>
+</html>

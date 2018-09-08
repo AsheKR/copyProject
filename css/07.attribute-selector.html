@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  a{
+    display: block;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+  }
+
+  a[href] {
+    color:blue;
+  }
+
+  a[href="https://google.co.kr"] {
+    color: #333;
+  }
+
+  a[href^="https://www.fastcampus"] {
+    color: red;
+  }
+
+  a[href*=".com"] {
+    color: orange;
+  }
+
+  a:hover {
+    font-size: 50px;
+    color: FireBrick;
+  }
+  </style>
+</head>
+<body>
+  <a>NO HREF</a>
+  <a href="https://google.co.kr">Google</a>
+  <a href="https://www.fastcampus.co.kr">Fast Campus</a>
+  <a href="https://www.fastcampus.co.kr/category_dev_camp/">Fast Campus CAMP</a>
+  <a href="https://www.facebook.com">facebook</a>
+</body>
+</html>

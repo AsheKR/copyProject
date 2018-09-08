@@ -1,0 +1,65 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+nav::after {
+  content: ' ';
+  height: 0;
+  display: block;
+  clear: both;
+}
+
+.horizontal {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.horizontal > * {
+  float: left;
+}
+
+header.main-header {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+header.main-header > nav > ul.left {
+  float: left;
+}
+
+header.main-header > nav > ul.left > li:first-of-type {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+header.main-header > nav > .right {
+  float: right;
+}
+
+header.main-header > nav > .right > ul > li > a {
+  color: #585858;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 7px;
+}
+
+header.main-header > nav > .right > .room-list {
+  font-size: 14px;
+}
+
+header.main-header > nav > .right > .auth-list {
+  font-size: 12px;
+}
+
+header.main-header > nav ul > li > a {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+}
+
+header.main-header > nav ul > li > a > img {
+  vertical-align: middle;
+}
