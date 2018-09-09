@@ -341,6 +341,49 @@ header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__login > a {
   vertical-align: middle;
 }
 
+footer {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 1080px;
+  color: #fff;
+}
+
+footer ul.footer__links {
+  line-height: 15px;
+}
+
+footer ul.footer__links > li.footer__links__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+footer ul.footer__links > li.footer__links__item:first-child {
+  margin-left: 0;
+}
+
+footer ul.footer__links > li.footer__links__item > a {
+  font-size: 12px;
+}
+
+footer .footer__copyright {
+  margin-top: 10px;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer ul.footer__sns {
+  text-align: right;
+  margin-top: -16px;
+}
+
+footer ul.footer__sns > li.footer__sns__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
 .icon {
   display: inline-block;
 }
@@ -349,14 +392,14 @@ header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__login > a {
   width: 7px;
   height: 4px;
   background-position: -133px -1464px;
-  background-image: url("../images/site.png");
+  background-image: url("../images/icons/site.png");
 }
 
 .down-icon__black {
   background-position: -133px -2532px;
   width: 7px;
   height: 4px;
-  background-image: url("../images/site.png");
+  background-image: url("../images/icons/site.png");
 }
 
 .search-icon {
@@ -364,5 +407,28 @@ header > .header > ul.gnb-list > li.gnb-list-item.gnb-list-item__login > a {
   background-position: -90px -797px;
   width: 50px;
   height: 30px;
-  background-image: url("../images/site.png");
+  background-image: url("../images/icons/site.png");
+}
+
+.sns__icon {
+  display: block;
+  background-position: center;
+  height: 15px;
+  width: 16px;
+}
+
+.twitter {
+  background-image: url("../images/icons/twitter_icon_white.png");
+}
+
+.instagram {
+  background-image: url("../images/icons/instagram_icon_white.png");
+}
+
+.facebook {
+  background-image: url("../images/icons/facebook_icon_white.png");
+}
+
+.weibo {
+  background-image: url("../images/icons/weibo_icon_white.png");
 }
